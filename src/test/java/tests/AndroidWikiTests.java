@@ -35,6 +35,7 @@ public class AndroidWikiTests extends TestBase {
     @Test
     void verifyCustomizeBlock() {
         step("Verify customize block", () -> {
+            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click();
             $(MobileBy.id("org.wikipedia.alpha:id/view_announcement_text"))
                     .shouldHave(Condition.text("Customize your Explore feed"));
         });
@@ -46,6 +47,7 @@ public class AndroidWikiTests extends TestBase {
     @Test
     void verifySavedBlock() {
         step("Verify saved block", () -> {
+            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click();
             $(MobileBy.id("org.wikipedia.alpha:id/navigation_bar_item_small_label_view")).click();
             $(MobileBy.id("org.wikipedia.alpha:id/messageTitleView"))
                     .shouldHave(Condition.text("Sync reading lists"));
