@@ -26,8 +26,6 @@ public class TestBase {
     @BeforeEach
     public void startDriver() {
         open();
-        step("Pass welcome", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
     }
 
     @AfterEach
