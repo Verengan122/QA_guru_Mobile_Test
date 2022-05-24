@@ -2,11 +2,13 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({"classpath:config/credentials.properties"})
+@Config.Sources({
+        "classpath:credentials.properties"
+})
 public interface CredentialsConfig extends Config {
 
-    @Key("username")
-    String username();
+    @Key("user")
+    String user();
 
     @Key("password")
     String password();
@@ -16,5 +18,4 @@ public interface CredentialsConfig extends Config {
 
     @Key("url")
     String url();
-
 }

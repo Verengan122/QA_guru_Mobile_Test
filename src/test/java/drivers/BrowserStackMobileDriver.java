@@ -9,8 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BrowserstackMobileDriver implements WebDriverProvider {
-
+public class BrowserStackMobileDriver implements WebDriverProvider {
     public static URL getBrowserstackUrl() {
         try {
             return new URL(Credentials.config.url());
@@ -23,8 +22,8 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     public WebDriver createDriver(DesiredCapabilities caps) {
 
         // Set your access credentials
-        caps.setCapability("browserstack.username", Credentials.config.username());
-        caps.setCapability("browserstack.passwrod", Credentials.config.password());
+        caps.setCapability("browserstack.user", Credentials.config.user());
+        caps.setCapability("browserstack.key", Credentials.config.password());
 
         // Set URL of the application under test
         caps.setCapability("app", Credentials.config.app());
@@ -40,5 +39,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
 
         return new AndroidDriver(getBrowserstackUrl(), caps);
+
     }
+
 }
