@@ -25,13 +25,13 @@
 - Поиск статей в приложении
 - Проверка блока новостей
 
-## Сборка в Jenkins
+## :bar_chart: Сборка в Jenkins
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/QA_guru_11_Mobile_Diploma/">Сборка в Jenkins</a>
 <p align="center">
 <img title="Jenkins Dashboard" src="images/screenshots/Jenkins.png">
 </p>
 
-## Allure отчет
+## :loudspeaker: отчет
 - ### Главный экран отчета
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screenshots/Allure.png">
@@ -42,12 +42,12 @@
 <img title="Allure Test Page" src="images/screenshots/TestOpsPages.png">
 </p>
 
-## Тесты кейсы в Allure Test Ops
+## :ticket: Тесты кейсы в Allure Test Ops
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screenshots/AllureTestOps.png">
 </p>
 
-## Видео примеры прохождения тестов
+## :film_strip: Видео примеры прохождения тестов
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
   <img title="Selenoid Video" src="images/gif/test.gif">
