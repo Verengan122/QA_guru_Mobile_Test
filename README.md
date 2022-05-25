@@ -28,13 +28,13 @@
 ## Сборка в Jenkins
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/QA_guru_11_Mobile_Diploma/">Сборка в Jenkins</a>
 <p align="center">
-<img title="Jenkins Dashboard" src="images/screenshots/jenkins.png">
+<img title="Jenkins Dashboard" src="images/screenshots/Jenkins.png">
 </p>
 
 ## Allure отчет
 - ### Главный экран отчета
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screenshots/allure.png">
+<img title="Allure Overview Dashboard" src="images/screenshots/Allure.png">
 </p>
 
 - ### Страница с проведенными тестами
@@ -44,7 +44,7 @@
 
 ## Тесты кейсы в Allure Test Ops
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screenshots/alluretestops.png">
+<img title="Allure Overview Dashboard" src="images/screenshots/AllureTestOps.png">
 </p>
 
 ## Видео примеры прохождения тестов
