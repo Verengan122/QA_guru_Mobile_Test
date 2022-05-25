@@ -3,7 +3,6 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import drivers.BrowserStackMobileDriver;
 import helpers.Attach;
-import io.appium.java_client.MobileBy;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,7 +11,6 @@ import org.junit.jupiter.api.BeforeEach;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static helpers.Attach.getSessionId;
-import static io.qameta.allure.Allure.step;
 
 public class TestBase {
     @BeforeAll
