@@ -26,7 +26,6 @@ public class AndroidWikiTests extends TestBase {
         });
         step("Verify content found", () ->
                 $$(byClassName("android.widget.TextView")).shouldHave(sizeGreaterThan(0)));
-
     }
 
     @Owner("QA_Guru")
