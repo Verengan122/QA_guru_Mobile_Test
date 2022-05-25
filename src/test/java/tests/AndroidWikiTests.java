@@ -15,42 +15,30 @@ import static io.qameta.allure.Allure.step;
 
 public class AndroidWikiTests extends TestBase {
 
-    @Owner("ileonteva")
+    @Owner("QA_Guru")
     @DisplayName("Search in wiki")
     @Tag("selenide")
     @Test
-    void searchTest() {
+    void searchTextxTest() {
         step("Type search", () -> {
             $(MobileBy.AccessibilityId("Search Wikipedia")).click();
-            $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).setValue("Dickens");
+            $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).setValue("Browserstack");
         });
         step("Verify content found", () ->
                 $$(byClassName("android.widget.TextView")).shouldHave(sizeGreaterThan(0)));
 
     }
 
-    @Owner("ileonteva")
+    @Owner("QA_Guru")
     @DisplayName("Verify wiki")
     @Tag("selenide")
     @Test
-    void verifyCustomizeBlock() {
-        step("Verify customize block", () -> {
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click();
-            $(MobileBy.id("org.wikipedia.alpha:id/view_announcement_text"))
-                    .shouldHave(Condition.text("Customize your Explore feed"));
-        });
-    }
-
-    @Owner("ileonteva")
-    @DisplayName("Verify saved block")
-    @Tag("selenide")
-    @Test
-    void verifySavedBlock() {
-        step("Verify saved block", () -> {
-            $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click();
-            $(MobileBy.id("org.wikipedia.alpha:id/navigation_bar_item_small_label_view")).click();
-            $(MobileBy.id("org.wikipedia.alpha:id/messageTitleView"))
-                    .shouldHave(Condition.text("Sync reading lists"));
+    void verifyNewsTest() {
+        step("Verify news page", () -> {
+            $(MobileBy.id("org.wikipedia.alpha:id/view_card_header_title"))
+                    .shouldHave(Condition.text("In the news"));
         });
     }
 }
+
+
