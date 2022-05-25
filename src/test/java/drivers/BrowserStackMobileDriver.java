@@ -39,7 +39,5 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
 
 
         return new AndroidDriver(getBrowserstackUrl(), caps);
-
     }
-
 }
